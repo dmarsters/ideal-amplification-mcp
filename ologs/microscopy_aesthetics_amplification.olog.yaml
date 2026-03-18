@@ -1,0 +1,315 @@
+# Microscopy Aesthetics - Ideal Amplification Rules
+# ===================================================
+# 
+# Domain: microscopy_aesthetics
+# Version: 1.0
+# 
+# Amplification pushes toward "perfect imaging conditions" - the Platonic ideal
+# of each microscopy modality. Unlike arbitrary aesthetic intensification, these
+# parameters respect physical constraints (diffraction limits, signal-to-noise
+# ratios, quantum efficiency).
+
+intentionality:
+  psychological_foundation: |
+    Microscopy ideal amplification represents the aspiration toward "perfect technique" -
+    the image every microscopist wishes they could capture. This differs from abstract
+    aesthetics because it's grounded in material truth: the physics of light-matter
+    interaction, detector performance, and sample preparation quality.
+    
+    The ideal isn't fantasy but rather the asymptotic limit of technical excellence.
+  
+  visual_psychology: |
+    Each microscopy modality has defining visual qualities that experts recognize
+    instantly. Amplification intensifies these signature characteristics:
+    - Fluorescence → radiant brilliance, jewel-like colors
+    - Electron → dramatic relief, metallic sheen
+    - Phase contrast → ethereal halos, transparent boundaries
+    - Confocal → crystalline optical sections
+    - Darkfield → brilliant edges against absolute black
+    
+    The ideal preserves modality identity while maximizing visual impact.
+  
+  categorical_elegance: |
+    F_ideal: Parameters_persona → Parameters_ideal is a parametric morphism that:
+    1. Preserves modality structure (fluorescence stays luminous, not metallic)
+    2. Respects physical constraints (some noise always exists)
+    3. Scales linearly with amplification_level ∈ [0, 1]
+    
+    Formula: ideal = persona + (max - persona) × amplification_level
+
+amplification_operations:
+  description: |
+    Parameter-specific amplification rules for microscopy aesthetics.
+    Each parameter has an ideal_max representing theoretical best performance
+    constrained by physics (not arbitrary 1.0 in most cases).
+  
+  microscopy_aesthetics:
+    description: "Amplification rules for microscopy imaging parameters"
+    
+    parameters:
+      # Core parameters (all modalities)
+      signal_clarity:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.95
+        operation: linear_extrapolation
+        intentionality: "Perfect signal-to-noise ratio - some quantum noise unavoidable"
+        physical_constraint: "Photon shot noise creates fundamental limit"
+      
+      contrast_intensity:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.95
+        operation: linear_extrapolation
+        intentionality: "Maximum structural boundary definition"
+        physical_constraint: "Sample preparation and staining efficiency"
+      
+      detail_density:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.9
+        operation: linear_extrapolation
+        intentionality: "Finest resolvable structures at highest magnification"
+        physical_constraint: "Diffraction limit (λ/2NA for light, probe size for electron)"
+      
+      dimensional_depth:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.95
+        operation: linear_extrapolation
+        intentionality: "Maximum 3D structure perception"
+        physical_constraint: "Depth of field and z-axis resolution"
+      
+      # Fluorescence-specific
+      glow_intensity:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.95
+        operation: linear_extrapolation
+        applicable_to: ["fluorescence"]
+        intentionality: "Brilliant luminescence - supernatural glow quality"
+        physical_constraint: "Quantum yield and photobleaching balance"
+      
+      signal_specificity:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.98
+        operation: linear_extrapolation
+        applicable_to: ["fluorescence"]
+        intentionality: "Perfect localization with zero background"
+        physical_constraint: "Antibody specificity and washing stringency"
+      
+      multi_channel_separation:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.95
+        operation: linear_extrapolation
+        applicable_to: ["fluorescence", "confocal"]
+        intentionality: "Distinct, non-overlapping channels"
+        physical_constraint: "Spectral overlap and filter quality"
+      
+      color_saturation:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.98
+        operation: linear_extrapolation
+        applicable_to: ["fluorescence", "confocal", "multiphoton"]
+        intentionality: "Brilliant jewel-tone colors"
+        physical_constraint: "Fluorophore brightness and photostability"
+      
+      # Electron microscopy-specific
+      surface_relief:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.98
+        operation: linear_extrapolation
+        applicable_to: ["electron"]
+        intentionality: "Maximum topographic perception - dramatic shadowing"
+        physical_constraint: "Coating quality and beam angle"
+      
+      textural_richness:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.95
+        operation: linear_extrapolation
+        applicable_to: ["electron"]
+        intentionality: "Every nanoscale feature visible"
+        physical_constraint: "Beam current and detector sensitivity"
+      
+      metallic_quality:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.95
+        operation: linear_extrapolation
+        applicable_to: ["electron"]
+        intentionality: "Brilliant metallic sheen from sputter coating"
+        physical_constraint: "Gold/platinum coating thickness"
+      
+      monochrome_purity:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 1.0
+        operation: linear_extrapolation
+        applicable_to: ["electron", "phase_contrast", "darkfield"]
+        intentionality: "Pure grayscale with full dynamic range"
+        physical_constraint: "Detector bit depth"
+      
+      # Phase contrast-specific
+      halo_intensity:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.92
+        operation: linear_extrapolation
+        applicable_to: ["phase_contrast"]
+        intentionality: "Maximum refractive halos revealing boundaries"
+        physical_constraint: "Phase ring alignment and specimen thickness"
+      
+      transparency_preservation:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.98
+        operation: linear_extrapolation
+        applicable_to: ["phase_contrast"]
+        intentionality: "Perfect phase information with minimal artifacts"
+        physical_constraint: "Optical system quality"
+      
+      ethereal_quality:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.9
+        operation: linear_extrapolation
+        applicable_to: ["phase_contrast"]
+        intentionality: "Ghost-like transparent visualization"
+        physical_constraint: "Living specimen preparation"
+      
+      # Confocal-specific
+      optical_sectioning_precision:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.98
+        operation: linear_extrapolation
+        applicable_to: ["confocal"]
+        intentionality: "Perfect optical sections - zero out-of-focus blur"
+        physical_constraint: "Pinhole size and numerical aperture"
+      
+      volumetric_coherence:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.95
+        operation: linear_extrapolation
+        applicable_to: ["confocal"]
+        intentionality: "Seamless 3D reconstruction"
+        physical_constraint: "Registration accuracy and z-step size"
+      
+      z_axis_resolution:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.9
+        operation: linear_extrapolation
+        applicable_to: ["confocal"]
+        intentionality: "Maximum depth discrimination"
+        physical_constraint: "Point spread function along z-axis"
+      
+      # Darkfield-specific
+      edge_brilliance:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.98
+        operation: linear_extrapolation
+        applicable_to: ["darkfield"]
+        intentionality: "Maximum edge illumination"
+        physical_constraint: "Oblique illumination angle and condenser NA"
+      
+      background_darkness:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 1.0
+        operation: linear_extrapolation
+        applicable_to: ["darkfield"]
+        intentionality: "Absolute black background"
+        physical_constraint: "Light trap efficiency"
+      
+      scattered_light_intensity:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.95
+        operation: linear_extrapolation
+        applicable_to: ["darkfield"]
+        intentionality: "Brilliant scattered light revealing particles"
+        physical_constraint: "Specimen refractive index contrast"
+      
+      # Brightfield-specific
+      stain_saturation:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.9
+        operation: linear_extrapolation
+        applicable_to: ["brightfield"]
+        intentionality: "Rich diagnostic staining without artifacts"
+        physical_constraint: "Staining protocol optimization"
+      
+      tissue_clarity:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.95
+        operation: linear_extrapolation
+        applicable_to: ["brightfield"]
+        intentionality: "Perfect tissue preparation and sectioning"
+        physical_constraint: "Microtome precision and fixation quality"
+      
+      histological_definition:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.95
+        operation: linear_extrapolation
+        applicable_to: ["brightfield"]
+        intentionality: "Textbook-quality histology"
+        physical_constraint: "Combined staining and sectioning excellence"
+      
+      # Multiphoton-specific
+      penetration_depth:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.9
+        operation: linear_extrapolation
+        applicable_to: ["multiphoton"]
+        intentionality: "Maximum tissue penetration with maintained resolution"
+        physical_constraint: "Two-photon cross-section and scattering"
+      
+      autofluorescence_control:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.95
+        operation: linear_extrapolation
+        applicable_to: ["multiphoton"]
+        intentionality: "Specific signal with minimal tissue autofluorescence"
+        physical_constraint: "Wavelength selection and spectral unmixing"
+      
+      phototoxicity_minimization:
+        type: continuous
+        range: [0.0, 1.0]
+        ideal_max: 0.98
+        operation: linear_extrapolation
+        applicable_to: ["multiphoton"]
+        intentionality: "Gentle imaging preserving living tissue"
+        physical_constraint: "Laser power and dwell time optimization"
+      
+      # Categorical parameters
+      magnification_scale:
+        type: categorical
+        operation: intensification
+        examples:
+          low: "medium"
+          medium: "high"
+          high: "ultra_high"
+        intentionality: "Move toward higher resolution and finer detail"
+      
+      color_palette_mode:
+        type: categorical
+        operation: intensification
+        applicable_to: ["fluorescence", "confocal", "multiphoton"]
+        examples:
+          scientific: "scientific_enhanced"
+          artistic: "artistic_vivid"
+          monochrome: "monochrome_pure"
+        intentionality: "Intensify the chosen color approach"

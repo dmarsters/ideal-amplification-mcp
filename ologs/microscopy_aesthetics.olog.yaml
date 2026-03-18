@@ -1,0 +1,297 @@
+# microscopy_aesthetics.olog.yaml
+# ================================
+
+domain: microscopy_aesthetics
+version: 1.0
+
+intentionality: |
+  Microscopy aesthetics amplification pushes toward the "most characteristic"
+  expression of each imaging modality. Fluorescence becomes more luminous,
+  electron microscopy gains extreme relief, phase contrast intensifies halos.
+  
+  This differs from simply increasing intensity - it amplifies the DEFINING
+  QUALITIES that make each microscopy type recognizable and scientifically
+  meaningful. The ideal represents perfect imaging conditions with optimal
+  sample preparation and instrument performance.
+
+# Amplification operations for continuous parameters
+amplification_operations:
+  
+  # Core parameters (all modalities)
+  signal_clarity:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.95
+    operation: linear_extrapolation
+    intentionality: "Clarity amplification pushes toward perfect signal-to-noise ratio"
+  
+  contrast_intensity:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.95
+    operation: linear_extrapolation
+    intentionality: "Maximum contrast reveals structural boundaries with dramatic clarity"
+  
+  detail_density:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.9
+    operation: linear_extrapolation
+    intentionality: "Detail density amplification reveals finer structures at higher magnification"
+  
+  color_saturation:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.98
+    operation: linear_extrapolation
+    applicable_to: [fluorescence, confocal, multiphoton]
+    intentionality: "Maximum saturation creates brilliant, jewel-like fluorescence signals"
+  
+  monochrome_purity:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 1.0
+    operation: linear_extrapolation
+    applicable_to: [electron, phase_contrast, darkfield]
+    intentionality: "Pure grayscale with full dynamic range"
+  
+  dimensional_depth:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.95
+    operation: linear_extrapolation
+    intentionality: "Maximum perception of three-dimensional structure"
+  
+  # Fluorescence-specific
+  glow_intensity:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.95
+    operation: linear_extrapolation
+    applicable_to: [fluorescence]
+    intentionality: "Maximum luminescence - brilliant, almost supernatural glow"
+  
+  signal_specificity:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.98
+    operation: linear_extrapolation
+    applicable_to: [fluorescence]
+    intentionality: "Perfect localization with zero background"
+  
+  multi_channel_separation:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.95
+    operation: linear_extrapolation
+    applicable_to: [fluorescence, confocal]
+    intentionality: "Distinct, non-overlapping channels with perfect spectral separation"
+  
+  # Electron-specific
+  surface_relief:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.98
+    operation: linear_extrapolation
+    applicable_to: [electron]
+    intentionality: "Maximum topographic perception - dramatic shadowing and depth"
+  
+  textural_richness:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.95
+    operation: linear_extrapolation
+    applicable_to: [electron]
+    intentionality: "Every nanoscale feature visible"
+  
+  metallic_quality:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.95
+    operation: linear_extrapolation
+    applicable_to: [electron]
+    intentionality: "Brilliant metallic sheen from coating"
+  
+  # Phase contrast-specific
+  halo_intensity:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.92
+    operation: linear_extrapolation
+    applicable_to: [phase_contrast]
+    intentionality: "Maximum refractive halos revealing transparent boundaries"
+  
+  transparency_preservation:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.98
+    operation: linear_extrapolation
+    applicable_to: [phase_contrast]
+    intentionality: "Perfect phase information with minimal amplitude artifacts"
+  
+  ethereal_quality:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.9
+    operation: linear_extrapolation
+    applicable_to: [phase_contrast]
+    intentionality: "Ghost-like transparency"
+  
+  # Confocal-specific
+  optical_sectioning_precision:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.98
+    operation: linear_extrapolation
+    applicable_to: [confocal]
+    intentionality: "Perfect optical sections with zero out-of-focus blur"
+  
+  volumetric_coherence:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.95
+    operation: linear_extrapolation
+    applicable_to: [confocal]
+    intentionality: "Seamless 3D reconstruction with perfect spatial registration"
+  
+  z_axis_resolution:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.9
+    operation: linear_extrapolation
+    applicable_to: [confocal]
+    intentionality: "Maximum depth discrimination"
+  
+  # Darkfield-specific
+  edge_brilliance:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.98
+    operation: linear_extrapolation
+    applicable_to: [darkfield]
+    intentionality: "Maximum edge illumination"
+  
+  background_darkness:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 1.0
+    operation: linear_extrapolation
+    applicable_to: [darkfield]
+    intentionality: "Absolute black background"
+  
+  scattered_light_intensity:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.95
+    operation: linear_extrapolation
+    applicable_to: [darkfield]
+    intentionality: "Brilliant scattered light revealing finest particles"
+  
+  # Brightfield-specific
+  stain_saturation:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.9
+    operation: linear_extrapolation
+    applicable_to: [brightfield]
+    intentionality: "Rich, diagnostic staining without overstaining artifacts"
+  
+  tissue_clarity:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.95
+    operation: linear_extrapolation
+    applicable_to: [brightfield]
+    intentionality: "Perfect tissue preparation"
+  
+  histological_definition:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.95
+    operation: linear_extrapolation
+    applicable_to: [brightfield]
+    intentionality: "Textbook-quality histology"
+  
+  # Multiphoton-specific
+  penetration_depth:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.9
+    operation: linear_extrapolation
+    applicable_to: [multiphoton]
+    intentionality: "Maximum tissue penetration with maintained resolution"
+  
+  autofluorescence_control:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.95
+    operation: linear_extrapolation
+    applicable_to: [multiphoton]
+    intentionality: "Specific signal with minimal tissue autofluorescence"
+  
+  phototoxicity_minimization:
+    type: continuous
+    min: 0.0
+    max: 1.0
+    ideal_max: 0.98
+    operation: linear_extrapolation
+    applicable_to: [multiphoton]
+    intentionality: "Gentle imaging preserving living tissue viability"
+
+# Categorical parameter amplifications
+categorical_amplifications:
+  
+  magnification_scale:
+    type: categorical
+    operation: intensification
+    scale:
+      low: 
+        ideal: medium
+        intentionality: "Move toward cellular-scale detail"
+      medium:
+        ideal: high
+        intentionality: "Move toward subcellular-scale detail"
+      high:
+        ideal: ultra_high
+        intentionality: "Move toward molecular/atomic-scale detail"
+  
+  color_palette_mode:
+    type: categorical
+    operation: intensification
+    applicable_to: [fluorescence, confocal, multiphoton]
+    scale:
+      scientific:
+        ideal: scientific_enhanced
+        intentionality: "Intensify spectral purity and channel separation"
+      artistic:
+        ideal: artistic_vivid
+        intentionality: "Maximize aesthetic impact and color richness"
+      monochrome:
+        ideal: monochrome_pure
+        intentionality: "Perfect grayscale dynamic range"
