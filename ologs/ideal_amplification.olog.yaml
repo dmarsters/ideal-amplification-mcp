@@ -1,0 +1,744 @@
+# ideal_amplification.olog.yaml
+# Jungian Ideal Amplification - Categorical formalization of aspirational self
+# Companion to shadow-complement-integration
+# Version 1.0
+
+metadata:
+  version: "1.0"
+  domain: "ideal_amplification"
+  description: "Categorical formalization of Jungian ideal/anima-animus as parametric intensification"
+  author: "Dal Marsters / Claude (Lushy Project)"
+  date: "2025-12-17"
+  companion_brick: "shadow-complement-integration"
+
+# ==============================================================================
+# CORE THEORY: The Tri-Polar Self
+# ==============================================================================
+
+tri_polar_self:
+  description: |
+    Complete Jungian self-structure as three categorical poles:
+    
+    1. SHADOW (Repressed): What the persona denies/represses
+       - Operation: Categorical antipode (flip to opposite)
+       - Psychology: Unconscious rejected material
+       - Visual effect: Complementary opposition
+    
+    2. PERSONA (Expressed): What the self presents to the world
+       - Operation: Identity morphism (current state)
+       - Psychology: Conscious self-image
+       - Visual effect: Baseline aesthetic
+    
+    3. IDEAL (Aspirational): What the self strives to become
+       - Operation: Parametric intensification (push to maximum)
+       - Psychology: Archetypal goal state
+       - Visual effect: Amplified expression
+  
+  categorical_structure:
+    objects:
+      - shadow_pole: "Antipodal complement of persona"
+      - persona_pole: "Current expressed self"
+      - ideal_pole: "Archetypal maximum of persona direction"
+    
+    morphisms:
+      shadow_to_persona:
+        name: "integration_of_denied"
+        operation: "interpolate from antipode toward center"
+        psychological_effect: "wholeness through acknowledgment"
+      
+      persona_to_ideal:
+        name: "amplification_toward_archetype"
+        operation: "extrapolate from current toward maximum"
+        psychological_effect: "growth through aspiration"
+      
+      shadow_to_ideal:
+        name: "transformation_arc"
+        operation: "complete journey from denied to actualized"
+        psychological_effect: "individuation process"
+    
+    composition:
+      three_way_blend:
+        formula: "α·Shadow + β·Persona + γ·Ideal where α + β + γ = 1"
+        constraint: "All weights non-negative"
+        intentionality: "Dynamic tension between poles creates psychological depth"
+
+# ==============================================================================
+# AMPLIFICATION OPERATIONS BY DOMAIN
+# ==============================================================================
+
+amplification_operations:
+  description: |
+    Domain-specific rules for intensifying parameters toward archetypal maximum.
+    Unlike shadow (which flips), ideal amplification pushes in same direction.
+  
+  # Heraldic Blazonry Domain
+  heraldic_blazonry:
+    description: "Intensify toward heraldic archetype"
+    
+    parameters:
+      tincture:
+        type: "categorical"
+        operation: "maximize_purity"
+        examples:
+          gules: "Push toward pure vermillion (remove warmth modifiers)"
+          azure: "Push toward pure ultramarine (remove green modifiers)"
+          or: "Push toward pure gold (maximize metallic luminance)"
+          argent: "Push toward pure silver (maximize reflective quality)"
+        
+        intentionality: "Archetypal tinctures are Platonic ideals of their hue"
+      
+      visual_weight:
+        type: "continuous"
+        current_range: [0.0, 1.0]
+        amplification: "linear extrapolation toward 1.0"
+        formula: "weight_ideal = weight_current + (1.0 - weight_current) * amplification_level"
+        
+        intentionality: "Maximum visual weight = complete assertive presence"
+      
+      detail_density:
+        type: "continuous"
+        archetype_depends_on: "style"
+        amplification_rules:
+          maximalist_style: "push toward 1.0 (ornate complexity)"
+          minimalist_style: "push toward 0.0 (essential simplicity)"
+        
+        intentionality: "Ideal depends on aesthetic philosophy"
+      
+      contrast_level:
+        type: "continuous"
+        amplification: "push toward 1.0 (maximum clarity)"
+        constraint: "must maintain tincture_rule compliance"
+        
+        intentionality: "Archetypal heraldry maximizes battlefield visibility"
+      
+      symmetry:
+        type: "categorical"
+        archetype: "perfect_bilateral"
+        operation: "enforce_exact_reflection"
+        
+        intentionality: "Ideal heraldry exhibits perfect geometric order"
+  
+  # Jazz Improvisation Domain
+  jazz_improvisation:
+    description: "Intensify toward jazz archetype"
+    
+    parameters:
+      swing_ratio:
+        type: "continuous"
+        current_range: [1.0, 3.0]  # 1.0 = straight, 3.0 = maximum swing
+        amplification: "push toward 2.5-3.0 range"
+        
+        intentionality: "Archetypal jazz swings hard"
+      
+      harmonic_tension:
+        type: "continuous"
+        amplification: "increase dissonance before resolution"
+        constraint: "must resolve convincingly"
+        
+        intentionality: "Maximum tension makes resolution more satisfying"
+      
+      rhythmic_complexity:
+        type: "continuous"
+        archetype_depends_on: "sub_style"
+        amplification_rules:
+          bebop: "push toward polyrhythmic complexity"
+          cool_jazz: "push toward minimalist clarity"
+          free_jazz: "push toward maximum unpredictability"
+        
+        intentionality: "Ideal depends on jazz philosophy"
+      
+      improvisational_density:
+        type: "continuous"
+        amplification: "maximize note frequency within phrase"
+        constraint: "must maintain breath/articulation feasibility"
+        
+        intentionality: "Virtuosic ideal = maximum expressive density"
+  
+  # Cocktail Aesthetics Domain
+  cocktail_aesthetics:
+    description: "Intensify toward cocktail archetype"
+    
+    parameters:
+      balance:
+        type: "continuous"
+        archetype: "perfect_equilibrium"
+        amplification: "push toward mathematically perfect ratios"
+        
+        intentionality: "Ideal cocktail achieves effortless harmony"
+      
+      complexity:
+        type: "continuous"
+        amplification: "increase layering without muddiness"
+        constraint: "must maintain clarity of dominant flavors"
+        
+        intentionality: "Sophisticated ideal = rich complexity with clear identity"
+      
+      temperature:
+        type: "continuous"
+        archetype_depends_on: "cocktail_family"
+        amplification_rules:
+          stirred: "push toward maximally chilled (−18°C)"
+          shaken: "push toward perfect dilution + chill"
+        
+        intentionality: "Ideal temperature reveals full flavor profile"
+      
+      presentation:
+        type: "categorical"
+        archetype: "gallery_worthy"
+        operation: "maximize visual drama while maintaining drinkability"
+        
+        intentionality: "Aspirational cocktails are liquid art"
+  
+  # Wine Tasting Domain
+  wine_tasting:
+    description: "Intensify toward wine archetype"
+    
+    parameters:
+      acidity:
+        type: "continuous"
+        archetype_depends_on: "varietal"
+        amplification_rules:
+          riesling: "push toward electric brightness (9-10)"
+          chardonnay: "push toward balanced crispness (6-7)"
+          pinot_noir: "push toward delicate freshness (7-8)"
+        
+        intentionality: "Archetypal expression of varietal character"
+      
+      tannin:
+        type: "continuous"
+        archetype_depends_on: "varietal"
+        amplification_rules:
+          cabernet: "push toward structured power (9-10)"
+          pinot_noir: "push toward silky elegance (4-5)"
+          nebbiolo: "push toward gripping intensity (10)"
+        
+        intentionality: "Maximum expression of varietal tannic profile"
+      
+      complexity:
+        type: "continuous"
+        amplification: "increase aromatic layers"
+        constraint: "must maintain varietal typicity"
+        
+        intentionality: "Grand cru ideal = infinite complexity within type"
+      
+      finish_length:
+        type: "continuous"
+        archetype: "very_long (60+ seconds)"
+        amplification: "maximize persistence"
+        
+        intentionality: "Great wines echo long after swallowing"
+
+# Norman Rockwell Visual Vocabulary Domain
+  norman_rockwell:
+    description: "Intensify toward archetypal narrative illustration clarity"
+    
+    parameters:
+      narrative_compression:
+        type: "categorical"
+        archetype: "backstory_legible"
+        operation: "push toward maximum story density"
+        progression:
+          frozen_moment: 0.25  # Single instant
+          before_during_after: 0.5  # Immediate sequence
+          complete_arc: 0.75  # Full story span
+          backstory_legible: 1.0  # Deep temporal layering (archetype)
+        
+        amplification_direction:
+          # All values move toward backstory_legible
+          frozen_moment: "before_during_after"
+          before_during_after: "complete_arc"
+          complete_arc: "backstory_legible"
+          backstory_legible: "backstory_legible"  # Already at archetype
+        
+        intentionality: |
+          Archetypal narrative illustration packs maximum story into single frame.
+          The ideal Rockwell moment reveals entire narrative arc through accumulated
+          visual evidence—not just the present instant, but its causes and consequences.
+      
+      staging_formality:
+        type: "categorical"
+        archetype: "symbolic_arrangement"
+        operation: "push toward maximum intentional meaning"
+        progression:
+          observed_naturalism: 0.25  # Raw observation
+          directed_tableau: 0.5  # Believable arrangement
+          theatrical_staging: 0.75  # Obvious performance
+          symbolic_arrangement: 1.0  # Constructed meaning (archetype)
+        
+        amplification_direction:
+          observed_naturalism: "directed_tableau"
+          directed_tableau: "theatrical_staging"
+          theatrical_staging: "symbolic_arrangement"
+          symbolic_arrangement: "symbolic_arrangement"  # Already at archetype
+        
+        intentionality: |
+          Archetypal composition maximizes symbolic density. Every element carries
+          intentional meaning. The ideal transcends naturalism to become visual
+          allegory—each object, gesture, and spatial relationship symbolically loaded.
+      
+      emotional_specificity:
+        type: "categorical"
+        archetype_depends_on: "current_emotion"
+        operation: "intensify purity of emotional expression"
+        
+        # Each emotion has its own archetypal maximum
+        amplification_rules:
+          embarrassment: 
+            archetype: "mortification"
+            amplification: "push toward complete exposure of vulnerability"
+          pride:
+            archetype: "triumph"
+            amplification: "push toward full self-elevation and recognition"
+          tenderness:
+            archetype: "devotion"
+            amplification: "push toward complete relational softness"
+          mischief:
+            archetype: "rebellion"
+            amplification: "push toward maximum playful disruption"
+          determination:
+            archetype: "resolution"
+            amplification: "push toward absolute will and focus"
+          wonder:
+            archetype: "transcendence"
+            amplification: "push toward complete awe and expansion"
+          disappointment:
+            archetype: "devastation"
+            amplification: "push toward total collapse of expectations"
+          triumph:
+            archetype: "glory"
+            amplification: "push toward maximum victory celebration"
+          anticipation:
+            archetype: "yearning"
+            amplification: "push toward complete forward-looking desire"
+          nostalgia:
+            archetype: "longing"
+            amplification: "push toward total backward-dwelling"
+          fellowship:
+            archetype: "communion"
+            amplification: "push toward perfect human connection"
+          reverence:
+            archetype: "worship"
+            amplification: "push toward absolute sacred respect"
+          alienation:
+            archetype: "isolation"
+            amplification: "push toward complete separation"
+        
+        intentionality: |
+          Archetypal emotions are pure, unmixed registers. The ideal emotional
+          expression removes ambiguity and reaches the Platonic form of that feeling.
+          Embarrassment becomes mortification, anticipation becomes yearning,
+          fellowship becomes communion.
+      
+      subject_dignity:
+        type: "categorical"
+        archetype: "heroic_framing"
+        operation: "push toward maximum elevation"
+        progression:
+          casual_depiction: 0.25  # Unremarkable
+          respectful_portrayal: 0.5  # Neutral dignity
+          elevated_ordinary: 0.75  # Monumentalized mundane
+          heroic_framing: 1.0  # Epic treatment (archetype)
+        
+        amplification_direction:
+          casual_depiction: "respectful_portrayal"
+          respectful_portrayal: "elevated_ordinary"
+          elevated_ordinary: "heroic_framing"
+          heroic_framing: "heroic_framing"  # Already at archetype
+        
+        intentionality: |
+          Archetypal Rockwell elevates ordinary humanity to heroic status.
+          The ideal treats every subject—child, elder, worker—as mythologically
+          significant. Democratic humanism maximized: everyone deserves portraiture-
+          level dignity and monumental framing.
+      
+      temporal_markers:
+        type: "categorical"
+        archetype: "iconic_historical"
+        operation: "push toward maximum cultural documentation"
+        progression:
+          timeless_generic: 0.25  # Universal humanity
+          period_suggested: 0.5  # Subtle era hints
+          richly_detailed_americana: 0.75  # Comprehensive documentation
+          iconic_historical: 1.0  # Defined moment (archetype)
+        
+        amplification_direction:
+          timeless_generic: "period_suggested"
+          period_suggested: "richly_detailed_americana"
+          richly_detailed_americana: "iconic_historical"
+          iconic_historical: "iconic_historical"  # Already at archetype
+        
+        intentionality: |
+          Archetypal narrative illustration captures specific cultural moment with
+          encyclopedic precision. The ideal frame becomes historical document—
+          every brand name, fashion detail, technology marker precisely rendered.
+          Not just "mid-century" but "Tuesday, August 12th, 1952."
+      
+      detail_hierarchy:
+        type: "categorical"
+        archetype: "comprehensive_detail"
+        operation: "push toward universal precision"
+        progression:
+          selective_focus: 0.33  # Strategic emphasis
+          balanced_attention: 0.67  # Equilibrium
+          comprehensive_detail: 1.0  # Everything rendered (archetype)
+        
+        amplification_direction:
+          selective_focus: "balanced_attention"
+          balanced_attention: "comprehensive_detail"
+          comprehensive_detail: "comprehensive_detail"  # Already at archetype
+        
+        intentionality: |
+          Archetypal Rockwell renders everything with equal loving precision.
+          The ideal frame exhibits no hierarchy of clarity—background details
+          receive same meticulous attention as foreground subjects. Universal
+          sharpness from edge to edge. Everything matters, everything visible.
+    
+    # Constraints for Norman Rockwell amplification
+    constraints:
+      - "Amplification cannot break narrative coherence"
+      - "Emotional purity must remain psychologically believable"
+      - "Heroic elevation cannot detach from human reality"
+      - "Historical specificity must maintain period accuracy"
+      - "Comprehensive detail cannot sacrifice compositional focus"
+    
+    # Special note on ambiguous states
+    handling_mixed_states:
+      description: |
+        When input parameters are at 0.5 (shadow-integrated), amplification
+        must decide: amplify the CLARITY of ambiguity or resolve toward
+        one pole?
+      
+      strategy: "amplify_clarity"
+      
+      rationale: |
+        The archetype of a mixed emotional state is CRYSTALLIZED DUALITY,
+        not resolution. Amplifying "anticipation↔nostalgia" at 0.5 creates
+        the ideal form of bittersweet longing—where both registers achieve
+        maximum clarity while remaining in tension.
+        
+        This preserves the psychological depth of shadow integration while
+        pushing toward archetypal expression.
+
+# ==============================================================================
+# INTENTIONALITY: Why Ideal Amplification Works
+# ==============================================================================
+
+intentionality:
+  
+  psychological_foundation:
+    jungian_model: |
+      The Ideal (anima/animus in Jung) represents the aspirational self -
+      the person we strive to become. Unlike the shadow (denied aspects),
+      the ideal operates through conscious aspiration and growth.
+      
+      Integrating the ideal creates forward momentum and purpose.
+      Without ideals, the self stagnates in mere equilibrium.
+    
+    developmental_necessity: |
+      Healthy development requires not just shadow integration (wholeness)
+      but also ideal pursuit (becoming). The fully individuated self
+      acknowledges its shadow AND reaches toward its potential.
+    
+    tension_dynamics: |
+      Shadow ←→ Persona ←→ Ideal creates productive tension:
+      - Shadow pulls toward denied material (integration)
+      - Ideal pulls toward aspirational goals (growth)
+      - Persona mediates between both poles (balance)
+  
+  visual_psychology:
+    archetypal_recognition: |
+      Humans instantly recognize archetypal forms - the "most X" version
+      of a category. Amplification taps this recognition:
+      - Most assertive red
+      - Most swinging jazz phrase
+      - Most balanced cocktail
+    
+    aspiration_aesthetic: |
+      Images that show becoming (not just being) create emotional engagement.
+      The viewer senses potential energy, forward motion, growth trajectory.
+    
+    parametric_vs_antipodal: |
+      Amplification differs from shadow complement:
+      - Shadow: Flip to opposite (gules → argent)
+      - Ideal: Intensify same direction (gules → purer_gules)
+      
+      This preserves core identity while showing its fullest expression.
+  
+  categorical_elegance:
+    parametric_morphism: |
+      Ideal amplification is a morphism in parameter space:
+      F_ideal: P → P_max where P_max is boundary of feasible region
+      
+      For continuous parameters: linear extrapolation
+      For categorical parameters: archetypal variant selection
+    
+    colimit_interpretation: |
+      The ideal can be seen as colimit of persona trajectory:
+      "If I kept becoming more like this, what would I approach?"
+      
+      This formalizes growth as categorical limit operation.
+
+# ==============================================================================
+# THREE-WAY INTEGRATION PATTERNS
+# ==============================================================================
+
+three_way_integration:
+  description: |
+    Combining shadow, persona, and ideal creates rich psychological depth.
+    Different weight distributions create different aesthetic effects.
+  
+  integration_modes:
+    
+    balanced_wholeness:
+      shadow_weight: 0.25
+      persona_weight: 0.50
+      ideal_weight: 0.25
+      
+      effect: "Complete self-portrait showing denied, expressed, and aspirational"
+      use_case: "Personal development visualization"
+      intentionality: "All three poles equally acknowledged"
+    
+    growth_emphasis:
+      shadow_weight: 0.10
+      persona_weight: 0.30
+      ideal_weight: 0.60
+      
+      effect: "Strong forward momentum toward potential"
+      use_case: "Aspirational branding, hero's journey"
+      intentionality: "Future-oriented, striving energy"
+    
+    integration_emphasis:
+      shadow_weight: 0.40
+      persona_weight: 0.40
+      ideal_weight: 0.20
+      
+      effect: "Reconciling denied aspects with current self"
+      use_case: "Therapeutic visualization, shadow work"
+      intentionality: "Wholeness takes priority over achievement"
+    
+    dynamic_tension:
+      shadow_weight: 0.33
+      persona_weight: 0.34
+      ideal_weight: 0.33
+      
+      effect: "Maximum tension between all three poles"
+      use_case: "Expressing internal conflict and growth simultaneously"
+      intentionality: "Showing the full complexity of psychological process"
+  
+  visual_composition_strategies:
+    
+    spatial_separation:
+      layout: "Three distinct zones in frame"
+      left: "Shadow elements (subtle, denied)"
+      center: "Persona elements (dominant, expressed)"
+      right: "Ideal elements (aspirational, reaching)"
+      
+      intentionality: "Clear spatial mapping of psychological structure"
+    
+    layered_transparency:
+      base_layer: "Persona (100% opacity)"
+      middle_layer: "Ideal (60% opacity) - visible aspiration"
+      top_layer: "Shadow (30% opacity) - barely acknowledged"
+      
+      intentionality: "Visual layering mirrors psychological layering"
+    
+    temporal_progression:
+      left_to_right: "Shadow → Persona → Ideal"
+      visual_flow: "Directional momentum from denied to actualized"
+      
+      intentionality: "Time-like dimension showing transformation arc"
+    
+    color_temperature_mapping:
+      shadow: "Cool temperatures (acknowledged but distant)"
+      persona: "Neutral temperatures (comfortable current state)"
+      ideal: "Warm temperatures (aspirational warmth)"
+      
+      intentionality: "Temperature as psychological proximity/desire"
+
+# ==============================================================================
+# AMPLIFICATION CONSTRAINTS
+# ==============================================================================
+
+amplification_constraints:
+  description: |
+    Not all amplifications are valid. Constraints ensure archetypal coherence.
+  
+  domain_coherence:
+    heraldry:
+      - "Must maintain tincture_rule (metal on color, color on metal)"
+      - "Must preserve battlefield visibility"
+      - "Symmetry amplification cannot break charge placement logic"
+    
+    jazz:
+      - "Swing amplification cannot break rhythmic pulse"
+      - "Harmonic tension must resolve convincingly"
+      - "Virtuosity cannot sacrifice musicality"
+    
+    cocktails:
+      - "Balance amplification cannot exceed physical drinkability"
+      - "Complexity cannot create muddiness"
+      - "Temperature must remain within serving range"
+  
+  psychological_realism:
+    avoid_impossible_ideals:
+      description: "Ideal must be aspirational but achievable"
+      examples:
+        valid: "Jazz player with exceptional swing feel"
+        invalid: "Jazz player who violates physics of time"
+    
+    preserve_identity:
+      description: "Amplification must preserve core persona"
+      examples:
+        valid: "gules → purer_gules (same hue family)"
+        invalid: "gules → azure (different hue = identity change)"
+    
+    respect_archetype:
+      description: "Ideal must align with cultural archetype"
+      examples:
+        valid: "Heraldic ideal = maximum clarity and dignity"
+        invalid: "Heraldic ideal = intentional confusion (violates purpose)"
+
+# ==============================================================================
+# COMPOSITION WITH SHADOW COMPLEMENT
+# ==============================================================================
+
+shadow_ideal_composition:
+  description: |
+    How ideal amplification composes with shadow complement to create
+    complete psychological space.
+  
+  categorical_structure:
+    functor_composition:
+      shadow_complement: "F_shadow: Persona → Antipode"
+      ideal_amplification: "F_ideal: Persona → Archetype"
+      
+      composed: "F_complete: Persona → (Shadow, Persona, Ideal)"
+      
+      properties:
+        - "F_shadow and F_ideal are independent morphisms"
+        - "Both preserve intentionality from base domain"
+        - "Composition creates 3D psychological space"
+  
+  visual_result_space:
+    axes:
+      x_axis: "Shadow ←→ Persona ←→ Ideal"
+      y_axis: "Domain parameter 1 (e.g., color)"
+      z_axis: "Domain parameter 2 (e.g., weight)"
+    
+    regions:
+      shadow_quadrant: "Denied aspects dominate"
+      persona_origin: "Current expressed self"
+      ideal_quadrant: "Aspirational aspects dominate"
+      
+      shadow_ideal_diagonal: "Complete transformation arc"
+  
+  use_cases:
+    
+    personal_development_visualization:
+      workflow: |
+        1. Extract persona from multi-domain colimit
+        2. Compute shadow complement (what I deny)
+        3. Compute ideal amplification (what I aspire to)
+        4. Integrate all three with appropriate weights
+        5. Synthesize image showing complete psychological space
+    
+    brand_evolution_imagery:
+      workflow: |
+        1. Current brand aesthetic = persona
+        2. Competitor weakness = shadow complement
+        3. Aspirational positioning = ideal amplification
+        4. Blend shows: "We're different from them, striving toward this"
+    
+    hero_journey_visualization:
+      workflow: |
+        1. Hero at start = persona
+        2. Denied qualities = shadow (must integrate)
+        3. Actualized potential = ideal (must achieve)
+        4. Journey arc = movement through (shadow, persona, ideal) space
+
+# ==============================================================================
+# IMPLEMENTATION NOTES
+# ==============================================================================
+
+implementation:
+  
+  mcp_tools_to_create:
+    - "list_amplification_modes"
+    - "get_amplification_parameters"
+    - "compute_ideal_amplification"
+    - "integrate_three_way"
+    - "compare_shadow_vs_ideal"
+  
+  integration_with_existing_bricks:
+    - "shadow-complement-integration (sibling brick)"
+    - "multi-domain-colimit-composer (provides persona)"
+    - "All domain bricks (provide amplification rules)"
+  
+  cost_profile:
+    layer_1_taxonomy: "0 tokens (deterministic lookup)"
+    layer_2_computation: "0 tokens (pure math operations)"
+    layer_3_synthesis: "~100-200 tokens (Claude interprets psychological space)"
+    
+    total_savings: "~70% vs pure LLM approach"
+  
+  validation:
+    constraint_checking: "Ensure amplification respects domain coherence"
+    identity_preservation: "Verify ideal remains recognizable as persona"
+    three_way_sum: "Confirm shadow + persona + ideal weights = 1.0"
+    intentionality_preservation: "Check psychological coherence"
+
+# ==============================================================================
+# EXAMPLES
+# ==============================================================================
+
+examples:
+  
+  heraldic_example:
+    persona:
+      tincture: "gules"
+      visual_weight: 0.6
+      detail_density: 0.5
+      contrast_level: 0.7
+    
+    shadow_complement:
+      tincture: "argent"  # Antipode flip
+      visual_weight: 0.4  # Linear interpolation toward 0
+      detail_density: 0.5  # No complement (neutral)
+      contrast_level: 0.3  # Opposite intensity
+    
+    ideal_amplification:
+      tincture: "pure_vermillion"  # Same hue, archetypal purity
+      visual_weight: 0.8  # Extrapolated toward 1.0
+      detail_density: 0.5  # No amplification (neutral)
+      contrast_level: 0.85  # Pushed toward maximum clarity
+    
+    three_way_integration:
+      weights: {shadow: 0.2, persona: 0.5, ideal: 0.3}
+      
+      result:
+        tincture: "warm_gules_with_hints_of_white"
+        visual_weight: 0.62
+        detail_density: 0.5
+        contrast_level: 0.68
+      
+      intentionality: |
+        Bold assertive presence (persona/ideal) tempered with
+        subtle acknowledgment of receptivity (shadow).
+        Forward momentum toward archetypal clarity.
+  
+  jazz_example:
+    persona:
+      swing_ratio: 2.0
+      harmonic_tension: 0.6
+      improvisational_density: 0.7
+    
+    ideal_amplification:
+      swing_ratio: 2.8  # Push toward maximum swing
+      harmonic_tension: 0.9  # Intense dissonance before resolution
+      improvisational_density: 0.95  # Virtuosic note density
+    
+    result_comparison:
+      persona_feel: "Solid swinging bebop"
+      ideal_feel: "Transcendent virtuosic mastery"
+      
+      intentionality: "Showing what this player could become with years of dedication"
