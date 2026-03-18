@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ideal-amplification-mcp"
+version = "1.0.0"
+description = "Jungian ideal amplification - parametric intensification toward archetypal maximum (Lushy MCP brick)"
+authors = [
+    {name = "Dal Marsters", email = "dal@lushy.app"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastmcp>=0.1.0",
+    "pyyaml>=6.0"
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ideal_amplification_mcp = ["*.yaml"]
